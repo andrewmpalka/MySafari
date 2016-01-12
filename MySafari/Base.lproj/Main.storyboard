@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-Wj-o0h">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-Wj-o0h">
                                 <rect key="frame" x="180" y="314" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
@@ -43,20 +44,29 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="g42-FF-omh">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="0.043137254899999998" green="0.37647058820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ppo-rf-RSc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0rK-Uo-p6i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ppo-rf-RSc" secondAttribute="trailing" constant="-20" id="Jfk-bQ-UhO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g42-FF-omh" secondAttribute="bottom" constant="282" id="LvU-FN-FEa"/>
                             <constraint firstItem="t0U-Wj-o0h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MEy-RI-jic"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g42-FF-omh" secondAttribute="trailing" constant="161" id="Rg9-zZ-OMl"/>
                             <constraint firstItem="Ppo-rf-RSc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TC8-NY-NAy"/>
+                            <constraint firstItem="g42-FF-omh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="162" id="c7w-PY-CF1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t0U-Wj-o0h" secondAttribute="bottom" id="hd9-ox-dam"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t0U-Wj-o0h" secondAttribute="trailing" constant="-20" id="nXS-jF-oEH"/>
+                            <constraint firstItem="g42-FF-omh" firstAttribute="top" secondItem="Ppo-rf-RSc" secondAttribute="bottom" constant="223" id="qZW-xv-urh"/>
                             <constraint firstItem="t0U-Wj-o0h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="rI3-rd-XWL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Ppo-rf-RSc"/>
+                                <exclude reference="g42-FF-omh"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="MEy-RI-jic"/>
@@ -65,12 +75,17 @@
                                 <exclude reference="0rK-Uo-p6i"/>
                                 <exclude reference="Jfk-bQ-UhO"/>
                                 <exclude reference="TC8-NY-NAy"/>
+                                <exclude reference="Rg9-zZ-OMl"/>
+                                <exclude reference="c7w-PY-CF1"/>
+                                <exclude reference="qZW-xv-urh"/>
+                                <exclude reference="LvU-FN-FEa"/>
                                 <exclude reference="hd9-ox-dam"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Ppo-rf-RSc"/>
+                                <include reference="g42-FF-omh"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="MEy-RI-jic"/>
@@ -79,11 +94,16 @@
                                 <include reference="0rK-Uo-p6i"/>
                                 <include reference="Jfk-bQ-UhO"/>
                                 <include reference="TC8-NY-NAy"/>
+                                <include reference="Rg9-zZ-OMl"/>
+                                <include reference="c7w-PY-CF1"/>
+                                <include reference="qZW-xv-urh"/>
+                                <include reference="LvU-FN-FEa"/>
                                 <include reference="hd9-ox-dam"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="g42-FF-omh" id="AZ1-uM-kaD"/>
                         <outlet property="urlTextField" destination="Ppo-rf-RSc" id="KBP-7Y-yRy"/>
                         <outlet property="webView" destination="t0U-Wj-o0h" id="wHQ-7X-kVx"/>
                     </connections>
