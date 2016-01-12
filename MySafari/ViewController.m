@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UIWebViewDelegate, UITextFieldDelegate>
+@interface ViewController () <UIWebViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
@@ -37,6 +37,9 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     [self.spinner stopAnimating];
     [self.spinner hidesWhenStopped];
+}
+- (IBAction)onBackButtonPressed:(UIButton *)sender {
+    [self.webView goBack];
 }
 
 @end
