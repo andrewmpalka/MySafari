@@ -41,6 +41,16 @@
     [self.webView loadRequest:request];
     return true;
 }
+- (IBAction)onComingSoonPressed:(UIButton *)sender {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Coming Soon!" message: @"3D Odors" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cool = [UIAlertAction actionWithTitle:@"Cool!" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        nil;
+    }];
+    [self presentViewController:alertController animated:YES completion:^{
+        nil;
+    }];
+    [alertController addAction:cool];
+}
 
 -(void)webViewDidStartLoad:(UIWebView *)webView {
     [self.spinner startAnimating];
@@ -48,7 +58,7 @@
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     [self.spinner stopAnimating];
-    self.spinner.hidesWhenStopped = YES;
+   // self.spinner.hidesWhenStopped = YES;
 //disables backbutton if you cannot go back
     if ([self.webView canGoBack]) {
         [self.backButton setEnabled:YES];

@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81BA80451FBCFDA00092DA4A15242DEA891A4FE5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "81BA80451FBCFDA00092DA4A15242DEA891A4FE5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6742D0D2-2F55-4D48-9381-AFF2C156B4C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "81BA80451FBCFDA00092DA4A15242DEA891A4FE5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MySafari",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MySafari.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andrewmpalka\/MySafari.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81BA80451FBCFDA00092DA4A15242DEA891A4FE5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andrewmpalka\/MySafari",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81BA80451FBCFDA00092DA4A15242DEA891A4FE5"
+    }
+  ]
+}
