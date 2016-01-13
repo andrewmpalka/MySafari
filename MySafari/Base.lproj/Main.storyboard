@@ -69,8 +69,7 @@
                                                 <exclude reference="2AU-0n-aWY"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="8" y="15" width="46" height="30"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="2AU-0n-aWY"/>
                                             </mask>
@@ -78,14 +77,6 @@
                                         <connections>
                                             <action selector="onBackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THx-qZ-IUf"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fG7-Gq-2VI">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="&gt;"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="330" y="15" width="46" height="30"/>
-                                        </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi8-3x-yvK">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -99,8 +90,7 @@
                                                 <exclude reference="GW8-3c-CeJ"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="330" y="15" width="46" height="30"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="GW8-3c-CeJ"/>
                                             </mask>
@@ -122,8 +112,7 @@
                                                 <exclude reference="rl4-2I-GXL"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="82" y="15" width="63" height="30"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="9Yf-8Z-RPa"/>
                                                 <include reference="rl4-2I-GXL"/>
@@ -147,8 +136,7 @@
                                                 <exclude reference="D3t-GK-IJM"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="177" y="15" width="46" height="30"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="4pO-yo-r3a"/>
                                                 <include reference="D3t-GK-IJM"/>
@@ -176,20 +164,19 @@
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="lw2-Ek-R0m"/>
-                                        <exclude reference="fG7-Gq-2VI"/>
                                         <exclude reference="zi8-3x-yvK"/>
                                         <exclude reference="B6i-W6-8tl"/>
                                         <exclude reference="aW7-vX-WEO"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="6xE-gC-6K6"/>
-                                        <exclude reference="LLi-zR-NIZ"/>
-                                        <exclude reference="khN-Ry-jSZ"/>
                                         <exclude reference="Dm8-1y-Z79"/>
                                         <exclude reference="ZDJ-NY-Jo7"/>
                                         <exclude reference="zPU-Mj-cRP"/>
                                         <exclude reference="Mm4-Wc-Zsx"/>
                                         <exclude reference="jjX-Kt-fmw"/>
+                                        <exclude reference="LLi-zR-NIZ"/>
+                                        <exclude reference="khN-Ry-jSZ"/>
                                         <exclude reference="3za-BO-JTA"/>
                                         <exclude reference="S6L-uW-pge"/>
                                         <exclude reference="fZh-PG-fFg"/>
@@ -198,20 +185,19 @@
                                 <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="lw2-Ek-R0m"/>
-                                        <include reference="fG7-Gq-2VI"/>
                                         <include reference="zi8-3x-yvK"/>
                                         <include reference="B6i-W6-8tl"/>
                                         <include reference="aW7-vX-WEO"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="6xE-gC-6K6"/>
-                                        <include reference="LLi-zR-NIZ"/>
-                                        <include reference="khN-Ry-jSZ"/>
                                         <include reference="Dm8-1y-Z79"/>
                                         <include reference="ZDJ-NY-Jo7"/>
                                         <include reference="zPU-Mj-cRP"/>
                                         <include reference="Mm4-Wc-Zsx"/>
                                         <include reference="jjX-Kt-fmw"/>
+                                        <include reference="LLi-zR-NIZ"/>
+                                        <include reference="khN-Ry-jSZ"/>
                                         <include reference="3za-BO-JTA"/>
                                         <include reference="S6L-uW-pge"/>
                                         <include reference="fZh-PG-fFg"/>
@@ -284,6 +270,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="lw2-Ek-R0m" id="uFQ-c0-ys5"/>
+                        <outlet property="forwardButton" destination="zi8-3x-yvK" id="rOJ-rd-PKo"/>
                         <outlet property="spinner" destination="g42-FF-omh" id="AZ1-uM-kaD"/>
                         <outlet property="urlTextField" destination="Ppo-rf-RSc" id="KBP-7Y-yRy"/>
                         <outlet property="webView" destination="t0U-Wj-o0h" id="wHQ-7X-kVx"/>
